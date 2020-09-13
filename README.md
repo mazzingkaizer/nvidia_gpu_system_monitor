@@ -1,4 +1,4 @@
-check_system.sh is monitoring system for usage of memory, cpu, disk. and GPU (currtnely GPU0)
+check_system.sh is monitoring system for usage of memory, cpu, disk. and GPU (currtnely GPU0) on console or terminal(black-screen)
 OS : Ubuntu 18.04
 
 
