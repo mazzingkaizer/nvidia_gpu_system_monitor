@@ -1,8 +1,8 @@
 check_system.sh is monitoring shell program for usage of memory, cpu, disk. and GPU on console or terminal(black-screen) 
 OS : Ubuntu 18.04
-Usage :
+Usage
 |---------------------------|
-|./check_system.sh [GPU NUMBER]|
+|./check_system.sh [GPU NUMBER(Default 0)]|
 |---------------------------|
 ![Running screen](./check_system_v0.1.PNG)
 
