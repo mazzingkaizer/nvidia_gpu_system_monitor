@@ -1,1 +1,1 @@
-<img src="images/thisbookcover.jpg" width="100%" height="100%" title="thisbookcover" alt="이 책"></img>으로 [fast.ai 스터디](https://github.com/fast-ai-kr/fast-ai-study/) 에서 공부한 내용을 한글로 정리하고자 합니다.
+<img src="images/thisbookcover.jpg" width="10%" height="10%" title="thisbookcover" alt="이 책"></img>으로 [fast.ai 스터디](https://github.com/fast-ai-kr/fast-ai-study/) 에서 공부한 내용을 한글로 정리하고자 합니다.
