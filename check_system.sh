@@ -26,7 +26,8 @@ CPU_PERCENT=`top -b -n 1 | grep -i cpu\(s\)| awk -F, '{print $4}' | tr -d "%id,"
 #DISK RATIO
 DISK_TOTAL=`df -P | grep -v ^Filesystem | awk '{sum += $2} END { print sum; }'`
 DISK_USED=`df -P | grep -v ^Filesystem | awk '{sum += $3} END { print sum; }'`
-DISK_PERCENT=$(echo "100*$DISK_USED/$DISK_TOTAL"| bc -l)
+DISK_TOTAL_F=`echo $DISK_TOTAL | awk -F"E" 'BEGIN{OFMT="%10.10f"} {print $1 * (10 ^ $2)}'`
+DISK_PERCENT=$(bc <<<"100*$DISK_USED/$DISK_TOTAL_F")
 
 echo $TIMESTAMP" MEMORY : "$MEMORY_PERCENT " CPU : "$CPU_PERCENT " DISK : " $DISK_PERCENT " GPU : " $GPU_VAL
 sleep 1
